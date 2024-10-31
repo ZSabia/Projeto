@@ -1,7 +1,46 @@
-/* .{
-    color: #5c4b77;
-    color: #6990e4;
-    color: #B145AD;
-    color: #f6a2d4;
 
-} */
+:root {
+    --cor-primaria: #5c4b77;    /* Roxo escuro */
+    --cor-secundaria: #6990e4;   /* Azul claro */
+    --cor-terciaria: #B145AD;    /* Rosa */
+    --cor-quaternaria: #f6a2d4;   /* Rosa claro */
+    --cor-branco: #ffffff;       /* Branco */
+    --cor-preto: #000000;        /* Preto */
+}
+
+.header-gif {
+    background-image: url('../img/banner.gif')    ;
+    background-size: cover;       
+    background-position: center;  
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo{
+    display: flex;
+  }
+
+  .carousel-inner img {
+    max-height: 300px; /* Define a altura máxima do carrossel */
+    width: auto; /* A largura se ajusta automaticamente */
+    object-fit: cover; /* Preenche o espaço disponível sem distorcer a imagem */
+}
+
+footer {
+    background-color: var(--cor-terciaria);
+}
+
+h5 {
+    color: var(--cor-secundaria);
+}
+
+p {
+    color: var(--cor-primaria);
+}
+
+.nav-link {
+    color: var(--cor-quaternaria);
+}
+.nav-link.active {
+    color: var(--cor-secundaria);
+}
