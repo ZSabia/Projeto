@@ -1,82 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/Projeto/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/Projeto/css/joseGeraldoSabiaPereira.css" />
-        <title>Portal Sustentabilidade</title>
-      </head>
-    <body>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/joseGeraldoSabiaPereira.css">
+    <title>Portal EcoSfera - Notícias</title>
+</head>
+<body>
     <header class="header-gif">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo.png" alt="Logo" width="40" class="d-inline-block align-text-top">
-                    Portal Sustentabilidade
+                    Portal EcoSfera
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../page/noticias.html">Notícias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../page/projetos.html">Projetos</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../page/noticias.html">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../page/projetos.html">Projetos</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="noticia4.jpg" class="d-block w-100" alt="Notícia 4">
+    <main class="container my-5">
+        <h2>Últimas Notícias sobre Sustentabilidade</h2>
+
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card">
+                    <img src="../img/noticia1.jpg" class="card-img-top" alt="Iniciativa Verde">
+                    <div class="card-body">
+                        <h5 class="card-title">Iniciativa Verde Revoluciona o Bairro</h5>
+                        <p class="card-text">Uma nova iniciativa de reciclagem foi lançada no bairro Central, incentivando os moradores a participarem ativamente da coleta seletiva. O projeto, que envolve a colaboração de escolas locais e ONGs, já apresentou resultados positivos em apenas um mês, aumentando a taxa de reciclagem em 30%.</p>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia1" aria-expanded="false" aria-controls="noticia1">Leia mais</button>
+                        <div class="collapse" id="noticia1">
+                            <div class="card card-body mt-2">
+                                A coleta seletiva, agora realizada semanalmente, tem como objetivo não apenas melhorar a sustentabilidade do bairro, mas também educar os cidadãos sobre a importância da reciclagem e como separar os materiais corretamente. Os organizadores do projeto esperam expandir a iniciativa para outras áreas da cidade nos próximos meses.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="noticia5.jpg" class="d-block w-100" alt="Notícia 5">
-            </div>
-            <div class="carousel-item">
-                <img src="noticia6.jpg" class="d-block w-100" alt="Notícia 6">
+
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card">
+                    <img src="../img/noticia2.jpg" class="card-img-top" alt="Tecnologia Sustentável">
+                    <div class="card-body">
+                        <h5 class="card-title">Nova Tecnologia Sustentável para Geração de Energia</h5>
+                        <p class="card-text">Um grupo de pesquisadores da Universidade Federal desenvolveu uma nova tecnologia que utiliza resíduos orgânicos para gerar energia elétrica. O sistema, que já está em fase de testes, promete ser uma alternativa viável e econômica para a produção de energia renovável.</p>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia2" aria-expanded="false" aria-controls="noticia2">Leia mais</button>
+                        <div class="collapse" id="noticia2">
+                            <div class="card card-body mt-2">
+                                A tecnologia utiliza um processo de digestão anaeróbica, que transforma resíduos orgânicos em biogás. Este biogás pode ser utilizado para geração de eletricidade, aquecimento ou até mesmo como combustível. Os pesquisadores acreditam que essa solução pode ser implementada em áreas rurais e urbanas, contribuindo para uma matriz energética mais limpa e sustentável.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <main class="container my-5">
         <div class="row">
-            <div class="col-md-4 col-sm-6 mb-3">
-                <img src="noticia_thumb.jpg" class="img-fluid" alt="Notícia 1">
-                <h5 style="color: #6990e4;">Notícia 1</h5>
-                <p>Resumo da notícia sobre um tema atual de sustentabilidade...</p>
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card">
+                    <img src="../img/noticia3.jpg" class="card-img-top" alt="Campanha de Plantio">
+                    <div class="card-body">
+                        <h5 class="card-title">Campanha de Plantio de Árvores Ganha Força</h5>
+                        <p class="card-text">A campanha “Um Verde por Dia” já plantou mais de 5.000 árvores na região metropolitana, unindo a população em um esforço coletivo para restaurar áreas degradadas. Com a ajuda de voluntários e patrocinadores, o projeto busca aumentar a cobertura verde e contribuir para a melhora da qualidade do ar.</p>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia3" aria-expanded="false" aria-controls="noticia3">Leia mais</button>
+                        <div class="collapse" id="noticia3">
+                            <div class="card card-body mt-2">
+                                A iniciativa conta com eventos mensais em que os cidadãos podem se inscrever para participar do plantio. Além das árvores, a campanha inclui atividades educativas sobre preservação ambiental e importância da biodiversidade. A meta é plantar 20.000 árvores até o final do ano.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <img src="noticia_thumb2.jpg" class="img-fluid" alt="Notícia 2">
-                <h5 style="color: #B145AD;">Notícia 2</h5>
-                <p>Resumo da notícia sobre um tema atual de sustentabilidade...</p>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-3">
-                <img src="noticia_thumb3.jpg" class="img-fluid" alt="Notícia 3">
-                <h5 style="color: #5c4b77;">Notícia 3</h5>
-                <p>Resumo da notícia sobre um tema atual de sustentabilidade...</p>
+
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card">
+                    <img src="../img/noticia4.jpg" class="card-img-top" alt="Mobilização Ambiental">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobilização Ambiental Mobiliza Cidadãos</h5>
+                        <p class="card-text">Recentemente, uma mobilização ambiental realizada na praia de Copacabana atraiu milhares de participantes, todos engajados na limpeza e preservação do litoral. Com a participação de diversas ONGs e da comunidade local, o evento foi um sucesso e trouxe consciência sobre a importância da proteção dos nossos recursos naturais.</p>
+                        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#noticia4" aria-expanded="false" aria-controls="noticia4">Leia mais</button>
+                        <div class="collapse" id="noticia4">
+                            <div class="card card-body mt-2">
+                                Durante a mobilização, os voluntários coletaram mais de 1 tonelada de lixo da praia, além de realizar atividades educativas sobre o impacto do plástico no meio ambiente. A organização do evento promete novas edições, ampliando a participação e o alcance da mensagem ambiental.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="text-center py-4" style="background-color: #B145AD;">
-        <a href="#"><img src="facebook.png" width="30" alt="Facebook"></a>
-        <a href="#"><img src="twitter.png" width="30" alt="Twitter"></a>
-        <a href="#"><img src="instagram.png" width="30" alt="Instagram"></a>
-        <p class="text-white">&copy; 2024 Portal Sustentabilidade. Todos os direitos reservados.</p>
-    </footer>
+    <footer class="text-center py-4">
+        <a href="https://twitter.com/Greenpeace"><img src="../img/twitter.png" width="30" alt="Twitter" /></a>
+        <a href="https://www.instagram.com/greenpeace/"><img src="../img/instagram.png" width="30" alt="Instagram" /></a>
+        <a href="https://www.facebook.com/greenpeace.international"><img src="../img/facebook.png" width="30" alt="Facebook" /></a>
+        <p class="text-white">&copy; 2024 EcoSfera. Todos os direitos reservados.</p>
+        <p class="text-white">Endereço: Rua da Sustentabilidade, 999 - Bairro Verde, São Paulo, SP</p>
+        <p class="text-white">Contato: (11) 98888-8888 | contato@ecosfera.com.br</p>
+      </footer>
+            
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
