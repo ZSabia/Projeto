@@ -1,11 +1,17 @@
 /* Variáveis de cor */
 :root {
-  --cor-primaria: #5c4b77; /* Roxo escuro */
-  --cor-secundaria: #6990e4; /* Azul claro */
-  --cor-terciaria: #b145ad; /* Rosa */
-  --cor-quaternaria: #f6a2d4; /* Rosa claro */
-  --cor-branco: #ffffff; /* Branco */
-  --cor-preto: #000000; /* Preto */
+  --cor-primaria: #5c4b77;
+  /* Roxo escuro */
+  --cor-secundaria: #6990e4;
+  /* Azul claro */
+  --cor-terciaria: #b145ad;
+  /* Rosa */
+  --cor-quaternaria: #f6a2d4;
+  /* Rosa claro */
+  --cor-branco: #ffffff;
+  /* Branco */
+  --cor-preto: #000000;
+  /* Preto */
 }
 
 * {
@@ -16,7 +22,7 @@
 
 /* Estilo geral do corpo */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: var(--cor-primaria);
   line-height: 1.6;
 }
@@ -40,6 +46,8 @@ header nav {
 
 .navbar-nav .nav-link {
   color: var(--cor-branco) !important;
+  text-shadow: 1px 1px 4px var(--cor-terciaria);
+  font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -47,6 +55,7 @@ header nav {
 }
 
 .navbar-nav .nav-link:hover {
+  text-shadow: 1px 1px 4px var(--cor-terciaria);
   background-color: var(--cor-primaria);
   border-radius: 5px;
 }
@@ -56,38 +65,47 @@ header nav {
   background-image: url("../img/banner.gif");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: auto;
 }
+
+.carousel-item img {
+  width: 1080px;
+  height: 720px;
+}
+
 /* Efeito de pulso */
 @keyframes pulsar {
   0% {
-    transform: scale(1); /* Começa com o tamanho original */
+    transform: scale(1);
+    /* Começa com o tamanho original */
   }
+
   50% {
-    transform: scale(1.2); /* Aumenta o tamanho para 120% no meio da animação */
+    transform: scale(1.2);
+    /* Aumenta o tamanho para 120% no meio da animação */
   }
+
   100% {
-    transform: scale(1); /* Volta ao tamanho original */
+    transform: scale(1);
+    /* Volta ao tamanho original */
   }
 }
 
 /* Aplicando o efeito pulsante à logo */
 .navbar-brand img {
-  width: 100px; 
-  height: 100px; 
-  border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   animation: pulsar 1.5s infinite;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
-
 .navbar-brand img:hover {
-  animation: none; 
+  animation: none;
   transform: scale(1.15);
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -104,16 +122,17 @@ main.container {
   box-shadow: 0 4px 8px var(--cor-primaria);
 }
 
-h2, h3 {
-  font-family: 'Verdana', sans-serif;
+h2,
+h3 {
+  font-family: "Verdana", sans-serif;
   font-weight: bold;
   color: var(--cor-terciaria);
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: auto;
   color: var(--cor-primaria);
 }
 
@@ -121,13 +140,8 @@ p {
   margin-bottom: 30px;
 }
 
-.col-md-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Estilo dos cartões */
+
 .card {
   border-radius: 10px;
   overflow: hidden;
@@ -149,19 +163,24 @@ p {
 
 .card-body {
   padding: 20px;
+  text-shadow: 1px 1px 4px var(--cor-quaternaria);
+  color: var(--cor-primaria);
+  font-size: 1.1rem;
 }
 
 .card-title {
-  font-family: 'Verdana', sans-serif;
+  font-family: "Verdana", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--cor-primaria);
+  text-shadow: 1px 1px 4px var(--cor-terciaria);
   margin-bottom: 15px;
 }
 
 .card-text {
-  font-size: 1rem;
-  color: var(--cor-quaternaria);
+  text-shadow: 1px 1px 4px var(--cor-quaternaria);
+  color: var(--cor-primaria);
+  font-size: 1.1rem;
 }
 
 /* Estilo dos botões nos cartões */
@@ -187,16 +206,22 @@ main {
 /* Estilo do rodapé */
 footer {
   text-align: center;
-  margin-top: auto; 
+  margin-top: auto;
   background-color: var(--cor-terciaria);
   color: var(--cor-branco);
   padding: 20px 0;
   width: 100%;
 }
 
+footer img {
+  width: 60px;
+  height: 60px;
+  margin: 10px 10px;
+}
 
 footer a {
-  margin: 0 10px;
+  padding: 10px;
+  margin: 10px 10px;;
   transition: all 0.3s ease;
 }
 
